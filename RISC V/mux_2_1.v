@@ -1,9 +1,9 @@
 
 module mux_2_1 (
-    input  wire d0,
-    input  wire d1,
+    input  wire [31:0] d0,
+    input  wire [31:0] d1,
     input  wire sel,
-    output wire y
+    output wire [31:0] y
 );
 
     assign y = (sel) ? d1 : d0;
